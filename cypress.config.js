@@ -7,4 +7,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
   },
+
+  component: {
+    devServer: {
+      framework: "angular",
+      bundler: "webpack",
+    },
+    specPattern: "**/*.cy.ts",
+  },
 });
