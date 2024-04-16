@@ -12,5 +12,12 @@ export class LoginPage {
 
         cy.get('.oxd-button').click()
     }
+
+    // SigninError() {
+
+    //     cy.getBySel("signin-error")
+    //         .should("be.visible")
+    //         .and("have.text", "Invalid credentials")
+    // }
 }
 

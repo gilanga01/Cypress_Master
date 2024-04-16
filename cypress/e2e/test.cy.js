@@ -1,8 +1,8 @@
 /// <reference types ="cypress"/>
 
-it ('Saf Corporate', function(){
+it ('Britam', function(){
 
-    cy.visit("https://www.vodafone.com/")
+    cy.visit("https://britam.com/")
     
     
     
