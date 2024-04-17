@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest":"echo I am PreTest",
-    "posttest":"echo I am PostTest",
+    "pretest": "echo I am PreTest",
+    "posttest": "echo I am PostTest",
     "test": "echo I am Test",
     "hello": "echo Hello World",
     "cy-test": "cypress run"
@@ -13,14 +13,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "cypress-downloadfile": "^1.2.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.3.2",
     "@angular/cli": "^17.3.2",
     "@angular/common": "^17.3.1",
     "@angular/core": "^17.3.1",
-    "@angular/platform-browser-dynamic": "^17.3.1"
+    "@angular/platform-browser-dynamic": "^17.3.1",
+    "cypress-file-upload": "^5.0.8"
   },
   "description": ""
 }

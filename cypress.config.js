@@ -1,8 +1,8 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require('cypress');
+const { downloadFile } = require('cypress-downloadfile/lib/addPlugin');
 
 module.exports = defineConfig({
   e2e: {
-    //watchForFileChanges: True,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -10,9 +10,17 @@ module.exports = defineConfig({
 
   component: {
     devServer: {
-      framework: "angular",
-      bundler: "webpack",
+      framework: 'angular',
+      bundler: 'webpack',
     },
-    specPattern: "**/*.cy.ts",
+    specPattern: '**/*.cy.ts',
+  },
+
+  // setupNodeEvents can be defined in either
+  // the e2e or component configuration
+  e2e: {
+    setupNodeEvents(on) {
+      on('task', { downloadFile });
+    },
   },
 });
